@@ -1,0 +1,73 @@
+/*DESKTOP FIRST*/
+#about-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px 0px 15px 0px;
+}
+
+
+#btn-cv{
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    display: none;
+    margin: 10px;
+}
+#nav_cont{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+#nav-bar{
+    text-transform: uppercase;
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+
+
+#descargar-cv{
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+}
+h1{
+    color: var(--soft-blue);
+}
+
+.iconos{
+    padding: 5px;
+}
+
+
+/*
+    es menor <  
+        600px   /phone
+        900px   /tablet
+        1200px  /Desktop
+*/
+@media screen and (max-width: 600px){
+    #about-me{
+        flex-direction: column-reverse;
+    }
+    .interior{
+        flex-direction: column-reverse;
+    }
+    #nav-bar{
+        display: none;
+    }
+    #btn-cv{
+        display: block;
+    }
+    #nav_cont{
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,127 @@
+/*
+    media queries
+    Servir para definir estilos en diferentes dispositivos
+*/
+@import url(./about-me.css);
+@import url(./generation.css);
+@import url(./proyectos.css);
+@import url(./formulario.css);
+
+:root{
+    --fontBase: 'Popons', cursive;
+    --soft-blue: #4369D9;
+    --my-color: #7ECFE6;
+    --back-base: #3b2769;
+    --back-color: #1F1F26;
+    --aback-base: #401a49;
+    --aback-color: #302F40;
+    --hover-color: #60BF9F;
+    --boton-color: #86adff;
+    --borde-primario:
+}
+
+body{
+    background-color: black;
+    background: radial-gradient(circle, #000000 0%, #0f0f0f 30%, #0c0c0c 80%);
+    color: azure;
+    color: var(--soft-blue);
+    font-family: var(--fontBase);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+button{
+    color: var(--back-color);
+    background-color: var(--boton-color);
+    cursor: pointer;
+    outline: none;/*
+    border-width: 2px;
+    border-color: #363636;
+    border-style: solid;
+    border-radius: 5px;
+    border-image: linear-gradient(to bottom, var(--my-color),var(--soft-blue)) 1;
+    */margin: 10px 5px;
+    font-weight: bold;
+    box-shadow: 0 5px #999;
+}
+button:hover{
+    background-color: var(--hover-color);
+}
+button:active {
+   background-color: orange;
+   transform: translateY(2px);
+   box-shadow: 0 2px #666;
+}
+
+
+a:hover{
+    color: var(--hover-color);
+}
+
+h2{
+    background-color: var(--my-color);
+    
+    border-color: var(--soft-blue);
+    border-style: solid;
+    border-width: 3px;
+    /*
+    border-image: linear-gradient(to bottom, var(--my-color),var(--soft-blue)) 1;
+    */
+    border-radius: 5px;
+    border: inline;
+    text-align: center;
+    box-shadow: -5px 5px 6px 1px rgba(204,204,204,1);
+    -webkit-box-shadow: -5px 5px 6px 1px rgba(204,204,204,1);
+    -moz-box-shadow: -5px 5px 6px 1px rgba(204,204,204,1);
+}
+h5{
+    color: var(--my-color);
+}
+a{
+    color: red;
+}
+.contenedor_botones{
+    display: flex;
+    flex-direction: row;   
+    justify-content: flex-start; 
+}
+
+.exterior{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /*
+    border: 2px grey solid;
+    border-radius: 10px;
+    */
+    background-color: var(--back-color);
+    background: radial-gradient(circle, var(--back-base) 0%, var(--back-color) 30%, #020024 80%);
+}
+.interior{
+
+    width: 45%;
+    margin: 20PX 5px;
+    /*
+    border: 2px red solid;
+    border-radius: 10px;
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+@media screen and (max-width: 600px){
+    .exterior{
+        flex-direction: column-reverse;
+    }
+    .interior{
+        width: 90%;
+    }
+    .contenedor_botones{
+        flex-direction: column;
+        align-items: center;
+    }
+}

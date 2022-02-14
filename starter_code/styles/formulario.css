@@ -1,0 +1,52 @@
+#formulario{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-content: center;
+    text-align: center;
+    width: 60px;
+
+}
+
+
+
+.f_exterior{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /*
+    border: 2px grey solid;
+    border-radius: 10px;
+    */
+    background-color: var(--back-color);
+    background: radial-gradient(circle, var(--back-base) 0%, var(--back-color) 30%, #020024 80%);
+}
+.f_interior{
+
+    width: 45%;
+    margin: 20PX 5px;
+    /*
+    border: 2px red solid;
+    border-radius: 10px;
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.f_boton{
+    font-size: 15px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.entrada{
+    
+}
+
+#mensaje{
+    width: 50%;
+    height: 75px;
+}

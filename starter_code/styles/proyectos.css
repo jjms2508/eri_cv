@@ -1,0 +1,11 @@
+.proyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.botones{
+    font-size: 14px;
+    height: 40px;
+    width: 130px;
+    border-radius: 10px;
+}

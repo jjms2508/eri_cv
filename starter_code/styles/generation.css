@@ -1,0 +1,37 @@
+.generation{
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.centrado{
+    margin: 40px 0px;
+    width: 75%;
+    padding: 50px;
+    border: solid 5px #8080809c;
+    
+    border-radius: 20px;
+    background-color: var(--aback-color);
+    background: radial-gradient(circle, var(--aback-base) 0%, var(--aback-color) 20%, #020024 96%);
+}
+.p_gen{
+    font-size: 30px;
+}
+
+#desk{
+    display: block;
+}
+#movil{
+    display: none;
+}
+
+
+@media screen and (max-width: 600px){
+    #desk{
+        display: none;
+    }
+    #movil{
+        display: block;
+    }
+}
